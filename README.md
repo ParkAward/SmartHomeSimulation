@@ -20,10 +20,3 @@
  
 <img    width="50%" src="https://user-images.githubusercontent.com/101157141/160224391-86c0edd1-76db-46e3-924f-7dc89245f223.png" alt="구상도"/>
 </div>
-
-<br/>
- 싱글보드 <a href="https://magicmirror.builders/">MagicMirror Module</a>, <a href="https://mosquitto.org/">Ecilpes Mosquitto<a/>를 사용했습니다
-</pre>
-
-<h3>이미지 사용 출저</h3>
-Mobile 일러스트 : https://notefolio.net/sukwontoto/233542
