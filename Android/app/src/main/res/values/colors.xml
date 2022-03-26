@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryLight">#484848</color>
+    <color name="colorPrimaryStatus">#343434</color>
+
+
+    <color name="colorAccent">#996a6a6a</color>
+    <color name="colorSecondary">#fff8e1</color>
+    <color name="colorLight">#ffffff</color>
+    <color name="colorDark">#ccc5af</color>
+
+
+
+
+    <color name="graph1">#212121</color>
+    <color name="graph1_l">#484848</color>
+    <color name="graph2">#5d4037</color>
+    <color name="graph2_l">#8b6b61</color>
+    <color name="graph3">#ff5722</color>
+    <color name="graph3_l">#ff8a50</color>
+    <color name="graph4">#ffb300</color>
+    <color name="graph4_l">#ffe54c</color>
+    <color name="graph5">#689f38</color>
+    <color name="graph5_l">#99d066</color>
+    <color name="graph6">#0288d1</color>
+    <color name="graph6_l">#5eb8ff</color>
+    <color name="graph7">#303f9f</color>
+    <color name="graph7_l">#666ad1</color>
+    <color name="graph8">#512da8</color>
+    <color name="graph8_l">#8559da</color>
+    <color name="graph9">#009688</color>
+    <color name="graph9_l">#52c7b8</color>
+    <color name="graph10">#d32f2f</color>
+    <color name="graph10_l">#ff6659</color>
+
+</resources>

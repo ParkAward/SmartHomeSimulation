@@ -1,0 +1,15 @@
+{
+  "server_addr":"localhost",
+  "server_port":3000,
+
+  "mqtt_addr":"localhost",
+  "mqtt_clientId":"MyMQTT",
+  "mqtt_port":1883,
+  "mqtt_user":"mqtt_user",
+  "mqtt_passwd":"password",
+
+  "mysql_addr":"localhost",
+  "mysql_id":"root",
+  "mysql_passwd":"tkdwns12",
+  "mysql_db":"mydb"
+}

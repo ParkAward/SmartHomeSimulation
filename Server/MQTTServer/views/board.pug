@@ -1,0 +1,97 @@
+doctype html
+head
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    script(src='/js/jquery.min.js')
+    link(rel='stylesheet', href='/vendor/css/bootstrap.min.css')
+    script(src='/vendor/js/bootstrap.bundle.min.js')
+    script(src='/vendor/js/jquery.dataTables.min.js')
+    script(src='/vendor/js/dataTables.jqueryui.min.js')
+
+    title Board
+
+    
+body
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light
+        .container-fluid
+            a.navbar-brand
+        
+                img(src="/img/maple-leaf.svg" alt="" width="30" height="24" class="d-inline-block align-text-top") 
+                |Search 
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                    li.nav-item
+                        a.nav-link.nav-text client_Code : !{clientCode}
+                   
+                .d-flex
+                    input#mySearch.form-control.me-2(type='search', placeholder='Search', aria-label='Search', value= Topic )
+                    .dropstart
+                        .dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            img.img-rounded.bg-light(src="/img/setting.svg" alt="" width="40" height="40" class="d-inline-block align-text-top") 
+                        ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                            li
+                                a.dropdown-item(href='#') DisConnect
+                            li
+                                hr.dropdown-divider
+                            li
+                                a.dropdown-item(href='#') Login to Server
+                            li
+                                a.dropdown-item(href='#') Sync            
+
+    br
+    br
+    br
+
+    h1 Data Board
+    .table-reponsive
+        table#myTable.table.table-bordered.table-striped.table-hover.table-list-search.display(style="width:100%")
+            thead
+                tr
+                    th Client_ID
+                    th Topics
+                    th Messages
+                    th Time
+            style.
+                .fg-toolbar{
+                    visibility: hidden;
+                }
+            tbody
+                for data in dataList
+                    tr.content
+                        td=data.clientID
+                        td=data.topic 
+                        td=data.message 
+                        td=data.time
+script.
+    function filterText() {
+    var rex = new RegExp($('#filterText').val());
+    if (rex == "/all/") { clearFilter() } else {
+    $('.content').hide();
+    $('.content').filter(function () {
+    return rex.test($(this).text());
+    }).show();
+    }
+    }
+    function clearFilter() {
+    $('.filterText').val('');
+    $('.content').show();
+    }
+    $('#myTable').DataTable({
+        
+        stateSave: true,
+        lengthChange: false,
+        "paging":   false,
+        "info":     false
+
+    }
+    );
+    $('#mySearch').on('keyup click', function(){
+            $('#myTable').DataTable().search($('#mySearch').val()
+            ).draw();     
+    });
+
+    
+
+ 
+    

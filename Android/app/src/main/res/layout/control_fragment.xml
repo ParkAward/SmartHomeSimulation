@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="100"
+    android:orientation="vertical"
+    style="@style/Theme.MaterialComponents.DayNight"
+    tools:context=".main.control.ControlFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_weight="15">
+
+        <Button
+            android:id="@+id/monitor_on"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:icon="@drawable/monitor_on"
+            android:layout_weight="1"
+            android:text="monitorOn" />
+
+        <Button
+            android:id="@+id/monitor_off"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginRight="2dp"
+            app:icon="@drawable/monitor_off"
+            android:layout_weight="1"
+            android:text="monitorOff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="25">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bright" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/br_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Bright" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/brightness"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            android:stepSize="5.0"
+            app:tickColorInactive="@color/colorPrimary"
+            app:trackColorActive="#555"
+            app:trackHeight="20dp"
+            app:trackColorInactive="#AAA"
+            app:thumbColor="@color/colorPrimary"
+            app:haloColor="#1000"
+            app:thumbRadius="15dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

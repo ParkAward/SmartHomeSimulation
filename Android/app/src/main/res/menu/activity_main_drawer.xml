@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Mirror Control">
+            <menu>
+                <item
+                    android:id="@+id/mirror_reboot"
+                    android:icon="@drawable/reboot"
+                    android:title="Reboot mirror" />
+                <item
+                    android:id="@+id/mirror_shutdown"
+                    android:icon="@drawable/shutdown"
+                    android:title="Shutdown mirror" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

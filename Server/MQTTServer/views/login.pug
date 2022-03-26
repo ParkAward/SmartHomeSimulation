@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+       
+        link(rel='stylesheet', href='node_modules/font-awesome/css/font-awesome.min.css')
+        script(src='js/jquery.min.js')
+        script(src='vendor/js/jquery.leanModal.min.js')
+        link(rel='stylesheet', href='vendor/css/font.css')
+        link(href='/css/login.css', rel='stylesheet')
+        script(src='/js/cookie.js')
+        title Login
+    body 
+        .container 
+            style.
+                .container h1{
+                    font-size:200px;
+                    background-image:url(https://i.ibb.co/HTYWZbp/Hnet-image.gif);
+                    background-clip: content-box;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                }
+            h1 Search Your Data
+            a(id='modal_trigger' href='#modal' class='btn') Click here to Search
+
+            #modal.popupContainer(style='display:none;')
+                header.popupHeader 
+                    .moal_close
+                        i(class='fa fa-times')
+                .popupBody
+                    .social_login
+                        .centeredText 
+                            span Hello~
+                        .action_btns 
+                            .one_half 
+                                a#login_form.btn(href="#") Search
+                            .one_half.last
+                                a#register_form.btn(herf="#") Generate
+                    .user_login
+                        form.search
+                            label Client_ID
+                            input(type="text" ,name='clientID',id='clientID' placeholder='clientID')
+                            br
+                            label Topics you want to search
+                            input(type="text" ,name='topic',id='topic' , placeholder='topic')
+                            br
+                            .checkbox 
+                                input#remember.idSaveCheck(type='checkbox')
+                                label(for='remember') Remember ID on this computer 
+                            .action_btns 
+                                .one_half 
+                                    a(href='#' class='btn back_btn')
+                                        i(class='fa fa-angle-double-left') Back 
+                                .one_half.last
+                                        a(href='#' class='btn btn_red' onclick="loginSubmit();") Search 
+                    .user_register 
+                        form
+                            label#re_com write a New Client ID
+                            input(type="text" ,name="newID" ,id="newID")
+                            br
+                            .action_btns 
+                                .one_half 
+                                    a(href='#' class='btn back_btn')
+                                        i(class='fa fa-angle-double-left') Back 
+                                .one_half.last
+                                        a(href='#' class='btn btn_red' onclick="generateSubmit();") Generate
+        script(src='/js/login.js')
+      
+      
+     
+                        
