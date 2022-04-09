@@ -8,7 +8,7 @@
  
  --------------
 
-◼ MQTT broker 서버를 통해 센서데이터를 수집하여 API를 제공하는 서버 입니다. MagicMirror와 안드로이드를 통해 시각화 합니다. <br/>
+◼ MQTT broker 서버를 통해 센서데이터를 수집하여 API를 제공하고 MagicMirror(RPI)와 안드로이드를 통해 시각화 합니다. <br/>
 ◼수집된 데이터를 시각화하고 단말기(안드로이드 어플)을 통해 MagicMirror를 제어합니다.
 
 
