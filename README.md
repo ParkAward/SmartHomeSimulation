@@ -17,6 +17,5 @@
 <div align="center">
 <!-- <img    width="50%" src="https://user-images.githubusercontent.com/41848169/144437047-46997bfb-7e39-452c-8f07-6e0c760c06bc.jpg" alt="구상도"/> -->
 
- 
-<img    width="50%" src="https://user-images.githubusercontent.com/101157141/160224391-86c0edd1-76db-46e3-924f-7dc89245f223.png" alt="구상도"/>
+
 </div>
